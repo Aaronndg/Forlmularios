@@ -161,7 +161,7 @@
       let model = document.getElementById('model').value;
       let extra = { premium: 15, oversized: 10, vneck: 5 }[model] || 0;
       let total = (basePrice + extra) * qty;
-      document.getElementById('price').textContent = `$${total.toFixed(2)} MXN`;
+      document.getElementById('price').textContent = `$${total.toFixed(2)} GTQ`;
     }
 
     document.getElementById('quantity').addEventListener('change', updatePrice);
