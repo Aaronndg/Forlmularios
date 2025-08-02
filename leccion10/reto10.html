@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+<h1>Reto 10</h1>
+
+    <p>
+        En este reto, vamos a aplicar lo aprendido sobre formularios accesibles y buenas prácticas. Crea un formulario
+        que cumpla con las siguientes especificaciones:
+    </p>
+    <ul>
+        <li>Debe tener al menos 5 campos de entrada.</li>
+        <li>Todos los campos deben tener etiquetas correctamente asociadas.</li>
+        <li>Utiliza <code>&lt;fieldset&gt;</code> y <code>&lt;legend&gt;</code> para agrupar campos relacionados.</li>
+        <li>Incluye instrucciones claras para al menos un campo.</li>
+        <li>Implementa validación amigable para los campos.</li>
+        <li>Si es necesario, utiliza atributos ARIA para mejorar la accesibilidad.</li>
+    </ul>
+
+    <h2>Ejemplo de Formulario</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

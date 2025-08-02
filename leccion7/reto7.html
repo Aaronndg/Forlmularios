@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <h1>Reto 7</h1>
+    <p>En este reto, debes crear un formulario que permita a los usuarios ingresar su nombre y correo electrónico. Al enviar el formulario, se debe mostrar un mensaje de agradecimiento con los datos ingresados.</p>
+
+    <form id="userForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div id="message"></div>
+
+    <script>
+        document.getElementById('userForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            document.getElementById('message').innerText = `Gracias ${name}, hemos recibido tu correo: ${email}`;
+        });
+    </script>
+    
+</body>
+</html>
