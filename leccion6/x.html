@@ -1,47 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios con Selectores</title>
+    <title>Document</title>
 </head>
 <body>
-    <form action="#">
-        <div>
-            <label for="pais">Elige tu país:</label>
-            <select id="pais" name="user_country">
-                <option value="">--Por favor, elige una opción--</option>
-                <option value="gt">Guatemala</option>
-                <option value="es" selected>España</option>
-                <option value="ar">Argentina</option>
-                <option value="co">Colombia</option>
-            </select>
-        </div>
+    <header>
+        <h1>Lección 6: Listas desplegables (&lt;select&gt;, &lt;option&gt;)</h1>
+    </header>
+    <main class="container">
+        <div class="lesson-content">
+            <h2>Definición y Propósito</h2>
+            <p>
+                Las listas desplegables en HTML se crean utilizando las etiquetas <code>&lt;select&gt;</code> y
+                <code>&lt;option&gt;</code>. Estas permiten a los usuarios seleccionar una opción de un conjunto predefinido
+                de opciones, lo que es útil para mantener la interfaz limpia y organizada.
+            </p>
 
-        <div>
-            <label for="vehiculo">Elige tu vehículo preferido:</label>
-            <select id="vehiculo" name="user_vehicle">
-                <optgroup label="Europeos">
-                    <option value="volvo">Volvo</option>
-                    <option value="audi">Audi</option>
-                </optgroup>
-                <optgroup label="Asiáticos">
-                    <option value="toyota">Toyota</option>
-                    <option value="honda">Honda</option>
-                </optgroup>
-            </select>
-        </div>
+            <h2>Uso Común</h2>
+            <p>Las listas desplegables son ideales para:</p>
+            <ul>
+                <li>Seleccionar un país o región.</li>
+                <li>Elegir una categoría de producto.</li>
+                <li>Seleccionar un rango de precios.</li>
+                <li>Elegir una fecha o un mes específico.</li>
+            </ul>
 
-        <div>
-            <label for="estudios">Nivel de estudios:</label>
-            <select id="estudios" name="nivel_estudios">
-                <option value="primaria">Primaria</option>
-                <option value="secundaria">Secundaria</option>
-                <option value="bachillerato" selected>Bachillerato</option>
-                <option value="universidad">Universidad</option>
-                <option value="postgrado">Postgrado</option>
-            </select>
-        </div>
-    </form>
+            <h2>Ejemplo Básico</h2>
+            <p>A continuación, se muestra un ejemplo básico de una lista desplegable:</p>
+            <pre><code>&lt;select name="fruits"&gt;
+    &lt;option value="apple"&gt;Manzana&lt;/option&gt;
+    &lt;option value="banana"&gt;Banana&lt;/option&gt;
+    &lt;option value="orange"&gt;Naranja&lt;/option&gt; 
+    &lt;option value="grape"&gt;Uva&lt;/option&gt;
+&lt;/select&gt;</code></pre>  
 </body>
 </html>
